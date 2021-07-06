@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MillionVault | A DeFi staking platform for Millionaires by Millionaires.</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="inner">
+                <header>
+                    <h1>MillionVault</h1>
+                    <h2>A DeFi staking platform for Millionaires by Millionaires.</h2>
+                </header>
+                <section id="info" class="clearfix">
+                    <div id="message"></div>
+                    <div id="userInfo">
+                        <div class="row"><span class="label">$MM</span><div id="mm_balance"></div></div>
+                        <div class="row"><span class="label">$MV</span><div id="mv_balance"></div></div>
+                        <div class="row"><span class="label">Dividends</span><div id="dividends"></div></div>
+                        <div class="row"><span class="label">Weight</span><div id="weight"></div></div>
+                    </div>
+                </section>
+                <hr>
+                <p><img src="img/coin.png" width="100" height="100"></p>
+                <p>MillionVault is a community powered decentralized staking platform for <a href="http://youtube.com/techlead">TechLead</a>'s Million (MM) token. MillionVault was founded by <a href="https://web3.builders">web3.builders</a> (as millionaires). The smart contract for MillionVault is located at <a href="https://etherscan.io/address/0x53684d5bcB3eEB589ff88eD6054B3301F55FbCde" target="_blank">0x53684d5bcB3eEB589ff88eD6054B3301F55FbCde</a></p>
+                <p>Staking and Unstaking converts your $MM token to and from $MV at a ratio of 1:1. There is a 10% fee applied to both Stake and Unstake input amounts. You earn dividends based on trading volume and your overall weight in the pool. Increase your earnings by inviting new stakers and reinvesting earned dividends.</p>
+                <hr>
+                <section id="actions">
+                    <div class="section">
+                        <div id="stakeinfo"></div>
+                    </div>
+                    <div id="dapp">
+                        <div class="section">
+                            <div><h4><b>Stake</b></h4></div>
+                            <div class="row input"><span>Spend</span><span>$MM</span><input id="buy" type="number"><button id="stake" class="btn">Stake</button></div>
+                        </div>
+                        <div class="section">
+                            <div><h4><b>Unstake</b></h4></div>
+                            <div class="row input"><span>Spend</span><span>$MV</span><input id="sell" type="number"><button id="unstake" class="btn">Unstake</button></div>
+                        </div>
+                        <div class="section">
+                            <div><h4><b>Dividends</b></h4></div>
+                            <button id="reinvest" class="btn">Reinvest</button>
+                            <button id="withdraw" class="btn">Withdraw</button>
+                        </div>
+                        <div class="section">
+                            <div>Earn 2% referral commission</div>
+                            <div id="reflink"></div>
+                        </div>
+                    </div>
+                </section>
+                <div style="font-size:13px"><i>DISCLOSURE</i> MillionVault is not affiliated with MillionToken. By using MillionVault you agree that MillionVault and the developers of MillionVault offer no guarantees and are not responsible for any loss of capital that may or may not result from the use of MillionVault.</div>
+                <hr>
+            </div>
+        </div>
+        <script src="js/web3.min.js"></script>
+        <script src="js/abi.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
